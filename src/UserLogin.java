@@ -11,9 +11,14 @@ public class UserLogin {
         System.out.print("Password : ");
         password = input.nextLine();
 
-        if ((username.equals("patika")) && (password.equals("java123"))) {
+        if (!username.equals("patika") || (!password.equals("java123")){
+
+            System.out.println("Kullanici Adini Hatali Girdiniz. ");
+
+        } else if (((username.equals("patika")) && (password.equals("java123")))) {
+
             System.out.println("Giris Yaptiniz.");
-        } else {
+        }   else {
             System.out.println("Hatali Giris Yaptiniz. ");
 
             System.out.println("Sifreyi Sifirlamak Ister misiniz?");
